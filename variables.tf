@@ -177,6 +177,22 @@ variable "spot_fleet_iam_role_tags" {
 }
 
 ################################################################################
+# Compute Environment - EKS Configuration
+################################################################################
+
+variable "eks_cluster_arn" {
+  description = "EKS cluster ARN"
+  type        = string
+  default     = ""
+}
+
+variable "kubernetes_namespace" {
+  description = "EKS kubernetes namespace"
+  type        = string
+  default     = ""
+}
+
+################################################################################
 # Job Queue
 ################################################################################
 
